@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class movement : MonoBehaviour {
-	float forceMultiplyer = 4500;
+	float forceMultiplyer = 7500;
 	Vector3 cameraPos = new Vector3(0,2,-4);
 
 	// Update is called once per frame
@@ -21,11 +21,11 @@ public class movement : MonoBehaviour {
 		}
 		if (Input.GetKey(KeyCode.A)) {
 			// rotate the front forces if they are turning
-			forceFromFront = Quaternion.AngleAxis(-5,Vector3.up) * forceFromFront;
+			forceFromFront = Quaternion.AngleAxis(-50,Vector3.up) * forceFromFront;
 		}
 		if (Input.GetKey(KeyCode.D)) {
 			// rotate the front forces if they are turning
-			forceFromFront = Quaternion.AngleAxis(5,Vector3.up) * forceFromFront;
+			forceFromFront = Quaternion.AngleAxis(50,Vector3.up) * forceFromFront;
 		}
 		if (forceFromFront.sqrMagnitude!=0) {
 			rigidbody.AddForceAtPosition(forceMultiplyer*forceFromFront.normalized,transform.position+transform.localRotation*Vector3.forward);
