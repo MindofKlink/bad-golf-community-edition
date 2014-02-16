@@ -1,5 +1,13 @@
 fileFormatVersion: 2
-guid: af68fd1c3abc8b84a9bfcf378c0b775e
+<<<<<<< HEAD:Assets/badgolf/art/Materials.meta
+<<<<<<< HEAD
+guid: ef9bd718e62f7e045beae72abb992f87
+=======
+guid: e7af42545009af748b5471cea7906bec
+>>>>>>> ea47dc803dcd7964c501b112b03d69adbc4363ea
+=======
+guid: 2e87cdd28e52e9d48a8f290eb6f2032b
+>>>>>>> DFGC/master:Assets/badgolf/materials.meta
 folderAsset: yes
 DefaultImporter:
   userData: 
